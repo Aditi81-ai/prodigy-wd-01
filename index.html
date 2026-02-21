@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Modern responsive landing page with dynamic navbar and smooth interactions">
+  <title>Modern Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts for premium typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Fixed Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <!-- Logo -->
+      <div class="logo">
+        <h2>Brand<span class="logo-accent">.</span></h2>
+      </div>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Mobile Menu Toggle Button -->
+      <div class="menu-toggle" id="menuToggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sidebar Menu for Mobile -->
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <h2>Menu</h2>
+      <button class="close-btn" id="closeBtn">&times;</button>
+    </div>
+    <ul class="sidebar-links">
+      <li><a href="#home" class="sidebar-link">Home</a></li>
+      <li><a href="#features" class="sidebar-link">Features</a></li>
+      <li><a href="#about" class="sidebar-link">About</a></li>
+      <li><a href="#contact" class="sidebar-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Sidebar Overlay -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">
+        Build Something <span class="gradient-text">Amazing</span>
+      </h1>
+      <p class="hero-subtitle">
+        Create stunning websites with modern design and seamless user experience
+      </p>
+      <div class="hero-buttons">
+        <a href="#features" class="btn btn-primary">Get Started</a>
+        <a href="#about" class="btn btn-secondary">Learn More</a>
+      </div>
+    </div>
+    <div class="hero-illustration">
+      <div class="floating-card card-1"></div>
+      <div class="floating-card card-2"></div>
+      <div class="floating-card card-3"></div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Amazing Features</h2>
+        <p class="section-subtitle">Everything you need to build modern websites</p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature Card 1 -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2L2 7l10 5 10-5-10-5z" />
+              <path d="M2 17l10 5 10-5M2 12l10 5 10-5" />
+            </svg>
+          </div>
+          <h3 class="feature-title">Responsive Design</h3>
+          <p class="feature-description">
+            Perfectly adapts to any screen size from mobile to desktop with fluid layouts
+          </p>
+        </div>
+
+        <!-- Feature Card 2 -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 6v6l4 2" />
+            </svg>
+          </div>
+          <h3 class="feature-title">Fast Performance</h3>
+          <p class="feature-description">
+            Lightning-fast loading times with optimized code and efficient animations
+          </p>
+        </div>
+
+        <!-- Feature Card 3 -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <path d="M9 3v18M15 3v18M3 9h18M3 15h18" />
+            </svg>
+          </div>
+          <h3 class="feature-title">Modern UI</h3>
+          <p class="feature-description">
+            Beautiful gradients, smooth animations, and contemporary design patterns
+          </p>
+        </div>
+
+        <!-- Feature Card 4 -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+          </div>
+          <h3 class="feature-title">User Friendly</h3>
+          <p class="feature-description">
+            Intuitive navigation and interactions that users love and understand instantly
+          </p>
+        </div>
+
+        <!-- Feature Card 5 -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+            </svg>
+          </div>
+          <h3 class="feature-title">Smooth Animations</h3>
+          <p class="feature-description">
+            Delightful micro-interactions and transitions that enhance user experience
+          </p>
+        </div>
+
+        <!-- Feature Card 6 -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+          </div>
+          <h3 class="feature-title">Clean Code</h3>
+          <p class="feature-description">
+            Well-structured, commented, and maintainable code following best practices
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2 class="section-title">About Our Platform</h2>
+          <p class="about-description">
+            We specialize in creating modern, responsive web experiences that combine stunning
+            visuals with exceptional functionality. Our approach focuses on user-centric design,
+            performance optimization, and code quality.
+          </p>
+          <p class="about-description">
+            Built with pure HTML, CSS, and JavaScript, this landing page demonstrates the power
+            of vanilla web technologies without relying on heavy frameworks or libraries.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <h3 class="stat-number">100%</h3>
+              <p class="stat-label">Responsive</p>
+            </div>
+            <div class="stat">
+              <h3 class="stat-number">0</h3>
+              <p class="stat-label">Dependencies</p>
+            </div>
+            <div class="stat">
+              <h3 class="stat-number">Fast</h3>
+              <p class="stat-label">Performance</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="visual-card">
+            <div class="visual-content">
+              <div class="code-line"></div>
+              <div class="code-line short"></div>
+              <div class="code-line"></div>
+              <div class="code-line medium"></div>
+              <div class="code-line"></div>
+              <div class="code-line short"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Have a project in mind? Let's work together</p>
+      </div>
+
+      <div class="contact-content">
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" id="name" class="form-input" placeholder="Aditi Jagtap" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" id="email" class="form-input" placeholder="aditi2132@gmail.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="location" class="form-label">Location</label>
+            <input type="text" id="location" class="form-input" placeholder="Thane" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone" class="form-label">Phone</label>
+            <input type="tel" id="phone" class="form-input" placeholder="911232323" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" class="form-textarea" rows="5" placeholder="Tell us about your project..."
+              required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">&copy; 2026 Brand. All rights reserved. Built with ❤️ using pure HTML, CSS & JavaScript</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
